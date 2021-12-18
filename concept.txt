@@ -1,0 +1,18 @@
+Fact:
+The fact table mainly consists of business facts, measurements of a business process and foreign keys 
+that refer to primary keys in the dimension tables. It holds the data we want to analyze.
+For example, revenue generated in a software testing company is a fact and this data is 
+stored in fact table.
+
+Dimension:
+A dimension table stores the attributes to narrate the objects in a fact table. 
+It holds the necessary information to query the data from the facts table.
+For example, user may want to fetch the revenue generated of the company for a 
+particular time period so "Date" is a common dimension here.
+
+Staging Area:
+DWH Staging area is the location where the data from source system is 
+temporarily copied. Staging area is required since the source systems are available 
+for a specific time period to extract data.
+
+Read more: https://softwaretestingboard.com/q2a/1976/what-is-staging-dimension-and-facts-in-data-warehouse#ixzz7EqN9ksOZ

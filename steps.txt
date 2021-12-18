@@ -1,0 +1,7 @@
+1. Create AWS Redshift Cluster and DWH Role
+2. Start Apache Airflow, docker-compose up
+3. Configure Apache Airflow Hooks (connection for both S3 and Redshift)
+4. Execute the create-tables-dag (create the staging, fact and dimension tables. exclude from main dag)
+5. Turn on the fix/load_and_transform_data_in_redshift dag,
+    (startdate, enddate with format YYYY-MM-DD), 
+    interval @daily
